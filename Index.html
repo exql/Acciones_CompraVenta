@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Stylesheet.css">
-    <title>Acciones</title>
+    <title>Compra venta de Acciones</title>
 </head>
 
 <body>
@@ -16,26 +16,65 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pages/alta.html">Estado de cuenta</a></li>
-                <li><a href="pages/baja.html">Precios</a></li>
+                <li><a href="pages/baja.html">Actualizar Precios</a></li>
             </ul>
         </nav>
 
     </header>
 
 
-    <div class="conteiner">
+    <div class="form_conteiner">
         <form>
-            <label for="numDeL"></label>
-            <input type="text" id="nunDeL" placeholder="Número de L">
-            <label for="Razon Social"></label>
-            <input type="text" id="razon social" placeholder="Razon Social"><br><br>
-            <label for="DT"></label>
-            <input type="text" id="dt" placeholder="Director Técnico">
-            <label for="Rubro"></label>
-            <input type="text" id="rubro" placeholder="Rubro">
-            <label for="nDeIf"></label>
-            <input type="text" id="nDeIf" placeholder="N° de IF">
+            <fieldset>
+                <legend>COMPRA</legend>
+                <label for="Título"></label>
+                <input type="text" id="Título" placeholder="Nombre de la empresa">
+                <label for="Simbolo"></label>
+                <input type="text" id="Simbolo" placeholder="Simbolo">
+                <label for="URL"></label>
+                <input type="text" id="URL" placeholder="Link del Gráfico"><br><br>
+                <label for="Cotizacion"></label>
+                <input type="number" id="Cotizacion" placeholder="Cotización">
+                <label for="Comisión"></label>
+                <input type="number" id="Comisión" placeholder="Comisión">
+                <label for="Cantidad"></label>
+                <input type="number" id="Cantidad" placeholder="Cantidad Comprada"><br><br>
+                <label for="Guardar"></label>
+                <input type="submit" id="Guardar" value="Guardar">
+            </fieldset>
         </form>
+
+        <form>
+            <fieldset>
+                <legend>RECOMPRA</legend>
+                <label for="Simbolo"></label>
+                <input type="text" id="Simbolo" placeholder="Simbolo"><br><br>
+                <label for="Cotizacion"></label>
+                <input type="number" id="Cotizacion" placeholder="Cotización">
+                <label for="Comisión"></label>
+                <input type="number" id="Comisión" placeholder="Comisión">
+                <label for="Cantidad"></label>
+                <input type="number" id="Cantidad" placeholder="Cantidad Comprada"><br><br>
+                <label for="Guardar"></label>
+                <input type="submit" id="Guardar" value="Guardar">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>VENTA</legend>
+                <label for="Simbolo"></label>
+                <input type="text" id="Simbolo" placeholder="Simbolo"><br><br>
+                <label for="Cotizacion"></label>
+                <input type="number" id="Cotizacion" placeholder="Cotización">
+                <label for="Comisión"></label>
+                <input type="number" id="Comisión" placeholder="Comisión">
+                <label for="Cantidad"></label>
+                <input type="number" id="Cantidad" placeholder="Cantidad Vendida"><br><br>
+                <label for="Guardar"></label>
+                <input type="submit" id="Guardar" value="Guardar">
+            </fieldset>
+        </form> 
     </div>
 </body>
 

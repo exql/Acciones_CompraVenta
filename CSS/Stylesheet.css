@@ -10,6 +10,8 @@ header{
 body{
     margin: 0;
 }
+
+
 nav{
 /*border-color: blueviolet;
 border-style: dotted;*/
@@ -17,6 +19,7 @@ border-style: dotted;*/
 padding: 0;
 margin:0;
 font-family: Arial, Helvetica, sans-serif;
+display: inline-table;
 }
 
 nav ul{
@@ -51,27 +54,22 @@ nav ul li a:hover {
     color:white;
     }
 
-.conteiner{
-    position:relative;
+.form_conteiner{
+    /*position:relative;*/
     box-sizing: border-box;
+    display: inline-table;
 }
+
+
 form {
         margin-top: 1.5em;  
-        text-align: left; 
+        text-align: left;
+        display: inline-block;
     }
 .title {
     position:relative;
     margin-top: 3em;  
     text-align: center; 
-}
-
-article {
-    border-color: burlywood;
-    border-style:solid;
-    width: 67%;
-    margin-top:2px;
-    margin-bottom:2px;
-
 }
 
 section{
