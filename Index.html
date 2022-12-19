@@ -25,26 +25,40 @@
 
     <div class="form_conteiner">
         <form>
-            <fieldset>
-                <legend>COMPRA</legend>
-                <label for="Título"></label>
-                <input type="text" id="Título" placeholder="Nombre de la empresa">
-                <label for="Simbolo"></label>
-                <input type="text" id="Simbolo" placeholder="Simbolo">
-                <label for="URL"></label>
-                <input type="text" id="URL" placeholder="Link del Gráfico"><br><br>
-                <label for="Cotizacion"></label>
-                <input type="number" id="Cotizacion" placeholder="Cotización">
-                <label for="Comisión"></label>
-                <input type="number" id="Comisión" placeholder="Comisión">
-                <label for="Cantidad"></label>
-                <input type="number" id="Cantidad" placeholder="Cantidad Comprada"><br><br>
-                <label for="Guardar"></label>
-                <input type="submit" id="Guardar" value="Guardar">
-            </fieldset>
+            <h5>COMPRA</h5>
+            <div class="operation_form">
+                <div>
+                    <label for="Título"></label>
+                    <input type="text" id="Título" placeholder="Nombre de la empresa">
+                </div>
+                <div>
+                    <label for="Simbolo"></label>
+                    <input type="text" id="Simbolo" placeholder="Simbolo">
+                </div>
+                <div>
+                    <label for="URL"></label>
+                    <input type="text" id="URL" placeholder="Link del Gráfico">
+                </div>
+                <div>
+                    <label for="Cotizacion"></label>
+                    <input type="number" id="Cotizacion" placeholder="Cotización">
+                </div>
+                <div>
+                    <label for="Comisión"></label>
+                    <input type="number" id="Comisión" placeholder="Comisión">
+                </div>
+                <div>
+                    <label for="Cantidad"></label>
+                    <input type="number" id="Cantidad" placeholder="Cantidad Comprada">
+                </div>
+                <div>
+                    <label for="Guardar"></label>
+                    <input type="submit" id="Guardar" value="Guardar">
+                </div>
+            </div>
         </form>
 
-        <form>
+        <form class="operation_form">
             <fieldset>
                 <legend>RECOMPRA</legend>
                 <label for="Simbolo"></label>
@@ -60,7 +74,7 @@
             </fieldset>
         </form>
 
-        <form>
+        <form class="operation_form">
             <fieldset>
                 <legend>VENTA</legend>
                 <label for="Simbolo"></label>
@@ -74,7 +88,7 @@
                 <label for="Guardar"></label>
                 <input type="submit" id="Guardar" value="Guardar">
             </fieldset>
-        </form> 
+        </form>
     </div>
 </body>
 

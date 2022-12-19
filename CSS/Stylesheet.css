@@ -11,7 +11,6 @@ body{
     margin: 0;
 }
 
-
 nav{
 /*border-color: blueviolet;
 border-style: dotted;*/
@@ -55,44 +54,17 @@ nav ul li a:hover {
     }
 
 .form_conteiner{
-    /*position:relative;*/
     box-sizing: border-box;
-    display: inline-table;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap: 0,5em;
 }
 
-
-form {
+.operation_form {
         margin-top: 1.5em;  
         text-align: left;
-        display: inline-block;
+
     }
-.title {
-    position:relative;
-    margin-top: 3em;  
-    text-align: center; 
-}
-
-section{
-    border-color: chartreuse;
-    border-style: dotted;
-    width: 67%
-    
-}
-
-aside{
-
-    border-color: crimson;
-    border-style: solid;
-    width: 28%;
-    padding-top: 25px;
-    padding-left: 15px;
-    padding-bottom: 25px;
-    margin: 2px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
-    text-align: center;
-}
 
 footer{
     border-color: darkgreen;
