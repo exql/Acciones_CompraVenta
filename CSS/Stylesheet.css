@@ -1,78 +1,111 @@
-
-header{
-    /*border-color: blue;
-    border-style: dotted;*/
+* {
     padding: 0;
-    margin:0;
-
-}
-
-body{
     margin: 0;
+    box-sizing: border-box;
 }
 
-nav{
-/*border-color: blueviolet;
+body {
+
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+
+nav {
+    /*border-color: blueviolet;
 border-style: dotted;*/
-/*width: 28%;*/
-padding: 0;
-margin:0;
-font-family: Arial, Helvetica, sans-serif;
-display: inline-table;
+    /*width: 28%;*/
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-table;
 }
 
-nav ul{
-    margin:0;
-    padding:0;
+nav ul {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: rgb(207, 205, 203);
-    top:0;
+    top: 0;
     width: 100%;
     position: fixed;
 
 }
+
 nav ul li {
     /*border-color: rgb(226, 116, 43);
     border-style: dotted;*/
-    padding:10px 15px;
+    padding: 10px 15px;
     list-style: none;
     float: left;
     text-align: center;
     border-right: 1px solid #fff;
-   }
+}
+
 nav ul li a {
     padding: 8px;
     text-decoration: none;
     color: #000;
-    }
- nav ul li:hover {
-        background-color: #555;
-        color:white;
-    }
-nav ul li a:hover {
-    color:white;
-    }
+}
 
-.form_conteiner{
+nav ul li:hover {
+    background-color: #555;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.form_conteiner {
+    border-style: dotted;
+    border-color: red;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-column-gap: 0,5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1ex;
 }
 
 .operation_form {
-        margin-top: 1.5em;  
-        text-align: left;
+    margin-top: 1.5em;
+    text-align: left;
+    box-sizing: border-box;
+    border-style: dotted;
+    border-color: blue;
+    
 
-    }
+}
 
-footer{
+footer {
     border-color: darkgreen;
     border-style: solid;
-    position:relative;
+    position: relative;
     left: 0;
     bottom: 0;
-    margin-top:5px;
+    margin-top: 5px;
     width: 100%;
     text-align: center;
+}
+
+
+
+.mainbox_resumen{
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 700px) {
+    .form_conteiner {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1ex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form_conteiner {
+    
+        grid-template-columns: 1fr;
+        grid-column-gap: 1ex;
+    }
 }
