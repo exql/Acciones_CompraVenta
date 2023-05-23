@@ -67,15 +67,27 @@ nav ul li a:hover {
 }
 
 .operation_form {
+  
     margin-top: 1.5em;
     text-align: left;
     box-sizing: border-box;
     border-style: dotted;
     border-color: blue;
-    
+    }
 
+    /*  Aplicando algo de flexbox Para provar como quedarian los formularios*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
 }
-
+.item{
+    background: #777;
+    width: 33%;
+    border:solid;
+    border-color: #fff;
+}
+/*-------------*/
 footer {
     border-color: darkgreen;
     border-style: solid;
@@ -91,6 +103,7 @@ footer {
 
 .mainbox_resumen{
     margin-top: 1.5em;
+    border-style
 }
 
 @media screen and (max-width: 900px) {}
